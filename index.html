@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Graph-explorer-experimental : Web-based graph analytics and some visualization">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Graph-explorer-experimental</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/alee156/Graph-Explorer-Experimental">View on GitHub</a>
+
+          <h1 id="project_title">Graph-explorer-experimental</h1>
+          <h2 id="project_tagline">Web-based graph analytics and some visualization</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/alee156/Graph-Explorer-Experimental/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/alee156/Graph-Explorer-Experimental/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="neurodatas-graph-explorer" class="anchor" href="#neurodatas-graph-explorer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>NeuroData's Graph Explorer</h1>
+
+<p>Web-based graph analytics and some visualization</p>
+
+<p>To run:</p>
+
+<ol>
+<li>go to the shiny dir</li>
+<li>start R</li>
+<li>type <code>library('shiny')</code>
+</li>
+<li>type <code>runApp()</code>
+</li>
+</ol>
+
+<h1>
+<a id="deploy-updates" class="anchor" href="#deploy-updates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Deploy Updates</h1>
+
+<ol>
+<li>log in to brainapps1.neurodata.io</li>
+<li><code>cd /srv/shinyapps/</code></li>
+<li><code>git pull</code></li>
+<li>(maybe restart shiny)</li>
+</ol>
+
+<h1>
+<a id="if-docker-container-goes-down" class="anchor" href="#if-docker-container-goes-down" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>If docker container goes down</h1>
+
+<ol>
+<li><code>./graphexplorerstart.sh</code></li>
+</ol>
+
+<h1>
+<a id="if-we-want-to-add-more-dependencies-to-installation" class="anchor" href="#if-we-want-to-add-more-dependencies-to-installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>If we want to add more dependencies to installation</h1>
+
+<ul>
+<li>Update dockerfile</li>
+<li>Run <code>sudo docker build -t graph_explorer .</code> in the same directory as the Dockerfile </li>
+</ul>
+
+<h1>
+<a id="to-get-a-terminal-on-the-docker-container" class="anchor" href="#to-get-a-terminal-on-the-docker-container" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>To get a terminal on the docker container</h1>
+
+<ul>
+<li><code>docker exec -it &lt;&lt;container name&gt;&gt; /bin/bash</code></li>
+<li>Find the container name by running <code>docker ps</code>
+</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Graph-explorer-experimental maintained by <a href="https://github.com/alee156">alee156</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>

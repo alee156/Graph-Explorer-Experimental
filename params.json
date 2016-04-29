@@ -1,0 +1,6 @@
+{
+  "name": "Graph-explorer-experimental",
+  "tagline": "Web-based graph analytics and some visualization",
+  "body": "# NeuroData's Graph Explorer\r\nWeb-based graph analytics and some visualization\r\n\r\nTo run:\r\n\r\n1. go to the shiny dir\r\n2. start R\r\n3. type `library('shiny')`\r\n5. type `runApp()`\r\n\r\n# Deploy Updates\r\n\r\n1. log in to brainapps1.neurodata.io\r\n2. ```cd /srv/shinyapps/```\r\n3. ```git pull```\r\n4. (maybe restart shiny)\r\n\r\n# If docker container goes down\r\n\r\n1. ```./graphexplorerstart.sh```\r\n\r\n# If we want to add more dependencies to installation\r\n\r\n- Update dockerfile\r\n- Run ```sudo docker build -t graph_explorer .``` in the same directory as the Dockerfile \r\n\r\n# To get a terminal on the docker container\r\n\r\n- ```docker exec -it <<container name>> /bin/bash```\r\n- Find the container name by running ```docker ps```\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
